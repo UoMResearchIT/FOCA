@@ -9,6 +9,7 @@ package uk.ac.ucl.uctzrso.foca;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
@@ -181,7 +182,7 @@ public class demographicsUpload {
 			String url = "http://....php"; //add url here
 
 			// create a new HTTP connection
-			AndroidHttpClient httpClient = AndroidHttpClient
+			HttpClient httpClient = AndroidHttpClient
 					.newInstance("Android");
 
 			// loop through the dataValues array and extract the names and

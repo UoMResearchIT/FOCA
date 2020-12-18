@@ -11,7 +11,7 @@ import java.util.Date;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -275,7 +275,7 @@ public class RetroActivity extends FragmentActivity {
 							data.putExtra("id", String.valueOf(isWorried2
 									.getCheckedRadioButtonId()));
 							setResult(RESULT_OK, data);
-							Toast.makeText(self, Util.requestSent, 100).show();
+							Toast.makeText(self, Util.requestSent, Toast.LENGTH_LONG).show();
 
 							finish();
 						}}
@@ -375,7 +375,7 @@ public class RetroActivity extends FragmentActivity {
 										Intent data = new Intent();
 										setResult(RESULT_OK, data);
 										Toast.makeText(self, Util.requestSent,
-												100).show();
+												Toast.LENGTH_LONG).show();
 
 										finish();
 									}}
